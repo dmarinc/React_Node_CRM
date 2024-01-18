@@ -4,7 +4,8 @@
   "description": "Rest Api",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./index.js"
+    "desarrollo": "nodemon ./index.js",
+    "start": "node ./index.js"
   },
   "author": "Diego Marin Cano",
   "license": "ISC",
