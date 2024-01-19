@@ -28,6 +28,9 @@ mongoose
 
 const app = express();
 
+//carpeta publica para la imagen
+app.use(express.static('uploads'));
+
 //habilitar bodyparser
 
 app.use(bodyParser.json());
@@ -55,8 +58,7 @@ app.use(cors(corsOptions));
 
 app.use('/', routes());
 
-//carpeta publica para la imagen
-app.use(express.static('uploads'));
+
 
 const host = process.env.HOST || '0.0.0.0';
 const port = process.env.PORT || 5000;
